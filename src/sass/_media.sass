@@ -1,0 +1,352 @@
+@media (max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.promo
+		.promo_header
+			font-size: 50px
+		.promo_subheader
+			font-size: 35px
+		.promo_descr
+			font-size: 16px
+			line-height: 20px
+	.reasons
+		.reasons_descr
+			width: 300px
+	.mobile
+		.mobile_card
+			width: 280px
+		.mobile_title
+			font-size: 21px
+
+@media (max-width: 991px)
+	.menu
+		&_item
+			padding-right: 8px
+		&_link
+			font-size: 10px
+	.subheader
+		&_official
+			font-size: 11px
+		&_phone 
+			font-size: 18px
+		&_logo
+			img
+				width: 100%
+		&_btn
+			margin-top: 21px
+			width: 100%
+			height: 40px
+	.promo
+		.promo_header
+			font-size: 42px
+		.promo_subheader
+			font-size: 26px
+		.promo_descr
+			font-size: 16px
+			line-height: 20px
+	.reasons
+		.reasons_block
+			flex-direction: column
+			align-items: center
+		&_descr
+			margin-top: 20px
+	.mobile
+		.mobile_card
+			width: 250px
+			height: 230px
+		.mobile_title
+			font-size: 16px
+	.footer
+		&_href
+			position: absolute
+			display: flex
+			align-items: center
+			top: 50%
+			left: 23px
+			width: 160px
+			height: 50px
+		&_link
+			width: 30px
+			height: 30px
+
+@media (max-width: 767px)
+	nav
+		.menu
+			position: fixed
+			z-index: 2
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			top: 0
+			left: -100% 
+			padding: 20px 10px 
+			background-color: rgba(0, 0 , 0, 0.9)
+			border-radius: 10px
+			transition: all 0.6s
+			&_active
+				top: 5px
+				left: 5px
+			&_item
+				padding-right: 0
+				border: none
+				margin: 10px
+			&_link
+				font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #ffffff
+			margin-bottom: 2px
+			transition: all 0.5s
+		&_active
+			span
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: rotate(-45deg)
+					background-color: red
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)
+					background-color: red
+				&:hover
+	.xs-hiden
+		display: none
+	.xs-visible
+		display: block
+	.subheader
+		&_phone
+			display: block
+			margin-top: 18px
+			font-weight: 400
+			font-size: 16px
+			text-align: center
+			text-transform: uppercase
+			text-decoration: none
+			color: $color-white
+		&_btn
+			display: block
+			margin: 0 auto
+			margin-top: 10px
+			width: 170px
+			height: 35px
+	.promo
+		.promo_header
+			font-size: 35px
+		.promo_subheader
+			font-size: 21px
+	.car
+		.car_flex_img
+			width: 100%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) 
+			.car_img
+				width: 100%
+		.car_header
+			.car_title
+				font-size: 28px
+			.car_sub_title
+				font-size: 14px
+	.footer
+		.footer_href
+			left: 50%
+			top: 70%
+			transform: translateX(-46%)
+		.footer_big_href
+			right: 50%
+			top: 100%
+			transform: translateX(50%)
+		.footer_block_title
+			height: 30px
+		.footer_flex_title
+			padding-top: 10px
+		.footer_sub_title
+			height: 28px
+		.footer_flex_sub
+			padding-top: 10px
+		.footer_title_link
+			padding-top: 6px
+	.mobile
+		.title
+			font-size: 30px
+	.reasons
+		.reasons_title
+			font-size: 26px
+@media (max-width: 575px)
+	nav
+		height: 32px
+		.menu
+			&_link
+				font-size: 15px		
+	.subheader
+		height: 60px
+		&_official
+			display: none
+		&_logo
+			margin-top: 20px
+		&_phone
+			font-size: 12px
+			font-weight: 400
+			margin-top: 11px
+		&_btn
+			width: 110px
+			height: 22px
+			font-size: 10px
+			margin-top: 9px
+	.promo
+		margin-top: 32px
+		min-height: 400px
+		padding: 101px 0 35px 0
+		.promo_header
+			font-size: 30px
+		.promo_subheader
+			font-size: 20px
+		.promo_descr
+			display: none
+		.promo_btn
+			width: 210px
+			height: 50px
+			font-size: 16px
+	.reasons
+		padding: 20px 0 38px 0
+		.reasons_title
+			font-size: 16px
+		.reasons_descr
+			width: 292px
+		.reasons_block
+			.reasons_descr
+				p
+					text-align: justify
+				span
+					text-align: center
+	.mobile
+		padding: 25px 0 43px 0
+		.title
+			font-size: 16px
+		.sub_title
+			font-size: 14px
+		.mobile_card
+			width: 250px
+			height: 230px
+		.mobile_title
+			font-size: 14px
+	.car
+		min-height: 393px
+		.car_lable
+			width: 112px
+			height: 22px
+			font-size: 11px
+		.car_header
+			padding-top: 27px
+		.car_title
+			display: none
+		.car_sub_title
+			display: none
+		.car_footer
+			display: none
+		.car_flex_img
+			width: 100%
+			position: absolute
+			top: 85px
+			left: 48% 
+		.car_day_invisible
+			display: block
+			padding-top: 297px
+			margin: 0 auto
+			text-align: center
+			color: $color-white
+			font-size: 17px
+			line-height: 24px
+	.servises
+		padding: 22px 0 30px 0
+		.servises_block
+			margin: 30px auto
+		.servises_lable
+			width: 115px
+			height: 26px
+			font-size: 11px
+		.servises_title
+			font-size: 16px
+			margin-top: 14px
+		.servises_title_list
+			font-size: 16px
+		.servises_list
+			margin-top: 0
+			padding-left: 34px
+			li
+				font-size: 14px
+				margin-bottom: 5px
+				line-height: 16px
+	.world
+		min-height: 360px
+		padding: 24px 0 30px 0
+		.world_lable
+			width: 79px
+			height: 26px
+			font-size: 11px
+		.world_title
+			font-size: 16px
+			margin-top: 14px
+		.world_subtitle
+			font-size: 14px
+			margin-top: 11px
+		.world_footer
+			width: 100%
+			bottom: 30px
+	.footer
+		min-height: 257px
+		padding: 24px 0 31px 0
+		.footer_block
+			width: 253px
+			height: 4px
+		.footer_block_title
+			width: 285px
+			height: 14px
+			padding-top: 22px
+		.footer_flex_title
+			padding-top: 0
+			.footer_title
+				font-size: 14px
+		.footer_sub_title
+			width: 230px
+			height: 35px
+			padding-top: 30px
+			.footer_flex_sub
+				padding-top: 0
+				.footer_sub
+					font-size: 11px
+					padding: 0 5px 5px 0
+				.footer_sub:nth-child(5)
+					padding: 0 0 0 0
+		.footer_title_link
+			height: 11px
+			padding-top: 40px
+		.footer_href
+			top: 60%
+		.footer_big_href
+			top: 80%
+			
+
+			
+				
+
+	
+
+
+
+
+						

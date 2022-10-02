@@ -1,0 +1,23 @@
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: $color-white
+		color: #000000	
+@mixin spawn_plus
+	&::before
+		content: ''
+		display: block
+		width: 14px
+		height: 2px
+		background-color: $color-aqua
+		transition: all 0.5s
+	&::after
+		content: ''
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		display: block
+		height: 14px
+		width: 2px
+		transition: all 1s												
+		background-color: $color-aqua
